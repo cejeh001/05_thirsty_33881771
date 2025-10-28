@@ -14,4 +14,4 @@ const mainRoutes = require("./routes/main");
 app.use("/", mainRoutes)
 
 // start web app listening
-app.listen(port, () => console.log("example app is listening on port ${port}!"))
+app.listen(port, () => console.log(`Example app is listening on port ${port}!`))

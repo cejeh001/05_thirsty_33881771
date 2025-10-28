@@ -2,9 +2,12 @@
 const express = require("express");
 const router = express.Router();
 
+// define data
+var shopData = {shopName: "The Thirsty Student"};
+
 // handle main routes
 // TODO
-router.get("/", (req, res) => {res.render("index.ejs")});
+router.get("/", (req, res) => {res.render("index.ejs", shopData)});
 router.get("/about", (req, res) => {res.render("about.ejs")});
 router.get("/search", (req, res) => {res.render("search.ejs")});
 
