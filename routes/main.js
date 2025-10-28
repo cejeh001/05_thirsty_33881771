@@ -3,7 +3,9 @@ const express = require("express");
 const router = express.Router();
 
 // define data
-var shopData = {shopName: "The Thirsty Student"};
+var shopData = {shopName: "The Thirsty Student",
+                productCategories: ["Beer", "Wine", "Hot Drinks"]
+            };
 
 // handle main routes
 // TODO
