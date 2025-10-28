@@ -9,6 +9,10 @@ const port = 8000
 // tell express we want to use ejs as the templating engine
 app.set("view engine", "ejs");
 
+// Set up the body parser 
+app.use(express.urlencoded({ extended: true })); 
+
+
 // load route handlers
 const mainRoutes = require("./routes/main");
 app.use("/", mainRoutes)
